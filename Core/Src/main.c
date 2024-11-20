@@ -245,7 +245,7 @@ static void MX_TIM7_Init(void)
 
   /* USER CODE END TIM7_Init 1 */
   htim7.Instance = TIM7;
-  htim7.Init.Prescaler = 0;
+  htim7.Init.Prescaler = 1;
   htim7.Init.CounterMode = TIM_COUNTERMODE_UP;
   htim7.Init.Period = 41999;
   htim7.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
@@ -316,13 +316,13 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOA_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOE, DBG_1_Pin|DBG_2_Pin|ECAT_CS_Pin|LED_1_Pin
-                          |LED_2_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOE, DBG_2_Pin|ECAT_CS_Pin|LED_1_Pin|LED_2_Pin
+                          |DBG_1_Pin, GPIO_PIN_RESET);
 
-  /*Configure GPIO pins : DBG_1_Pin DBG_2_Pin ECAT_CS_Pin LED_1_Pin
-                           LED_2_Pin */
-  GPIO_InitStruct.Pin = DBG_1_Pin|DBG_2_Pin|ECAT_CS_Pin|LED_1_Pin
-                          |LED_2_Pin;
+  /*Configure GPIO pins : DBG_2_Pin ECAT_CS_Pin LED_1_Pin LED_2_Pin
+                           DBG_1_Pin */
+  GPIO_InitStruct.Pin = DBG_2_Pin|ECAT_CS_Pin|LED_1_Pin|LED_2_Pin
+                          |DBG_1_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;

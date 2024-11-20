@@ -62,9 +62,7 @@ void Error_Handler(void);
 /* Private defines -----------------------------------------------------------*/
 #define ecat_spi hspi3
 #define printf_uart huart4
-#define DBG_1_Pin GPIO_PIN_2
-#define DBG_1_GPIO_Port GPIOE
-#define DBG_2_Pin GPIO_PIN_3
+#define DBG_2_Pin GPIO_PIN_2
 #define DBG_2_GPIO_Port GPIOE
 #define ECAT_CS_Pin GPIO_PIN_8
 #define ECAT_CS_GPIO_Port GPIOE
@@ -78,6 +76,8 @@ void Error_Handler(void);
 #define BTN_1_Pin GPIO_PIN_0
 #define BTN_1_GPIO_Port GPIOE
 #define BTN_1_EXTI_IRQn EXTI0_IRQn
+#define DBG_1_Pin GPIO_PIN_1
+#define DBG_1_GPIO_Port GPIOE
 
 /* USER CODE BEGIN Private defines */
 

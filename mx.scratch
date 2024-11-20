@@ -3,16 +3,16 @@
   <FileVersion>3.0</FileVersion>
   <Workspace>
     <WorkspaceType>Single-project</WorkspaceType>
-    <WorkspacePath>/home/amargan/work/code/firmware/bl_stm32f407/</WorkspacePath>
+    <WorkspacePath>/home/amargan/work/code/firmware/bl-stm32f407/</WorkspacePath>
     <underRoot>true</underRoot>
     <TrustZone>0</TrustZone>
     <HAL_Driver>/home/amargan/STM32Cube/Repository//STM32Cube_FW_F4_V1.28.1</HAL_Driver>
     <CMSIS>Drivers/CMSIS</CMSIS>
     <Toolchain>STM32CubeIDE</Toolchain>
-    <IocFile>bl_stm32f407.ioc</IocFile>
+    <IocFile>bl-stm32f407.ioc</IocFile>
     <Project>
               
-      <ProjectName>bl_stm32f407</ProjectName>
+      <ProjectName>bl-stm32f407</ProjectName>
            
       <ProjectNature>C</ProjectNature>
        
@@ -27,7 +27,7 @@
       <configs>
         <config>
               
-          <name>bl_stm32f407</name>
+          <name>bl-stm32f407</name>
           	 
           <mainSourceRepo>Core</mainSourceRepo>
              
